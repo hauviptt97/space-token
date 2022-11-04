@@ -33,16 +33,16 @@ const pages = [Home, Staking, Links, About]
     <div id="menu">
     <a-row >
       <a-menu v-model:selectedKeys="current" mode="horizontal" :inline-collapsed="collapsed">
-      <a-menu-item @click="toHomeClick" key="home">
+      <a-menu-item @click="toHomeClick" key="Marketplace">
           NFT Marketplace
         </a-menu-item>
-        <a-menu-item @click="toHomeClick" key="home">
+        <a-menu-item @click="toHomeClick" key="Roadmap">
           Roadmap
         </a-menu-item>
-        <a-menu-item @click="toHomeClick" key="home">
+        <a-menu-item @click="toHomeClick" key="Whitepaper">
           Whitepaper
         </a-menu-item>
-        <a-menu-item @click="toHomeClick" key="home">
+        <a-menu-item @click="toHomeClick" key="Deck">
           Pitch Deck
         </a-menu-item>
         <a-menu-item @click="toStakingClick" key="staking">
@@ -60,7 +60,6 @@ const pages = [Home, Staking, Links, About]
     <a-layout-content >
       <Home />
       <Home />
-
     </a-layout-content>
   </a-layout>
 </template>
