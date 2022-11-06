@@ -44,13 +44,14 @@ const hovered = false
 .bg {
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: bottom;
 }
 
 #mghome{
+    height: 7vh;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 1000px) {
     #mghome {
             height: 0;
         }

@@ -8,7 +8,7 @@
         <a-row justify="center">
             <img id="pte-img" :src="$image('/images/component/', 'playtoearn.png')" alt="">
         </a-row>
-        <a-row  :gutter="[24,24]">
+        <a-row>
             <a-col :sm="8" :xs="24">
                 <img class="ptes" :src="$image('/images/component/', 'build.png')" alt="">
                 <p class="title">BUILD</p>
@@ -35,7 +35,15 @@
     padding: 20px;
 }
 #pte .ant-row .ant-col {
+    display: flex;
+        flex-direction: column;
+        align-items: center;
     text-align: center;
+        background-image: url(/images/component/elipdecore.png);
+            mix-blend-mode: screen;
+            background-position: bottom;
+            background-repeat: no-repeat;
+            padding: 60px 20px;
 }
 
 #pte-img {
