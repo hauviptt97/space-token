@@ -157,7 +157,7 @@ height: 100vh;
 
 @media screen and (max-width: 700px) {
     #constract-code {
-    font-size: 8px;
+    font-size: 10px;
   }
 }
 </style>
