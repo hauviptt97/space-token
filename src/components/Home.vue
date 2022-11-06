@@ -4,6 +4,7 @@ const hovered = false
 </script>
 
 <template>
+    <div id="mghome"></div>
 <div id="home" v-bind:style="{ backgroundImage: 'url(' + $image('/images/', 'banner.jpg') + ')' } " class="bg">
     <a-row justify="center">
         <a-col span="6">
@@ -15,9 +16,9 @@ const hovered = false
         <a-col span="6">
             <div class="night">
                 <div v-for="n in 10" class="shooting_star"></div>
-                <div style="margin-top: 40vh;  transform: rotateZ(-130deg);">
+                <div style=" margin-top: 45vh; transform: rotateZ(-130deg);">
                     <a class="linkplay">
-                        <img :src="$image('/images/component/', hovered ? btnPlayNames[1]:btnPlayNames[0])" @mouseover="this.hovered=!hovered" style="width:20vw">
+                        <img :src="$image('/images/component/', hovered ? btnPlayNames[1]:btnPlayNames[0])" @mouseover="this.hovered=!hovered" style="width:100%">
                     </a>
                 </div>
 
@@ -25,7 +26,7 @@ const hovered = false
         </a-col>
         <a-col span="6">
             <div class="night">
-                <div v-for="n in 10" class="shooting_star"></div>
+                <div v-for="n in 15" class="shooting_star"></div>
             </div>
         </a-col>
     </a-row>
@@ -42,15 +43,24 @@ const hovered = false
 <style>
 .bg {
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     background-position: center;
-    background-size: 100%;
+}
+
+#mghome{
+    height: 7vh;
+}
+
+@media screen and (max-width: 500px) {
+    #mghome {
+            height: 9.6vh;
+        }
 }
 
 #home {
-    margin-top: 12vh;
     width: 100%;
     height: 100vh;
+    position: relative;
 }
 
 #home .ant-row {
@@ -69,7 +79,7 @@ const hovered = false
 
 .title {
     font-size: 3.3rem;
-    font-weight: 500;
+    font-weight: 700;
     font-family: 'Courier New', Courier, monospace;
     color: white;
 }
@@ -444,7 +454,7 @@ const hovered = false
     }
 
     100% {
-        transform: translateX(60vw);
+        transform: translateX(80vw);
     }
 }
 
@@ -454,7 +464,7 @@ const hovered = false
     }
 
     100% {
-        transform: translateX(60vw);
+        transform: translateX(80vw);
     }
 }
 
