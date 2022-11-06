@@ -48,7 +48,6 @@ const hovered = false
 }
 
 #mghome{
-    height: 7vh;
 }
 
 @media screen and (max-width: 500px) {

@@ -21,21 +21,10 @@ const pages = [Home, PTE, Links, About]
     <a-layout-header>
     <div class="constract" v-bind:style="{ backgroundImage: 'url(' + $image('/images/component/', 'headerbg.png') + ') !important' } ">
     <a-row justify="center" align="center" >
-      <a-col :sm="6" :xs="0">
-        <span style=" font-weight: 800; font-size: min(3vh,18px);  text-transform: uppercase; color:#ffff"> SIP Contract:</span>
-      </a-col>
-      <a-col :sm="18" :xs="22" style="text-align: center;">
-        <a-typography-text copyable
-          style="background: rgba(0, 0, 0, 0.5); border-radius: 8.40801px; padding: 10px 5px;  align-items: center;">
-          <span style="  margin: 10px; font-weight: 500; font-style: italic; font-size: min(3.3vw, 14px); color: yellow; word-break: break-all;">
-            0x55a020925d1dBAE2aEF72cc9f4b2F584429a5b99
-          </span>
-        </a-typography-text>
-      </a-col>
-      <a-col :sm="24" :xs="2">
+      <a-col :lg="12" :xs="2">
       <div id="menu">
         <a-row>
-          <a-col :sm="24" :xs="4">
+          <a-col :sm="24" :xs="1">
             <a-menu v-model:selectedKeys="current" mode="horizontal" :inline-collapsed="collapsed">
               <a-menu-item @click="toHomeClick" key="Marketplace">
                 NFT Marketplace
@@ -45,9 +34,6 @@ const pages = [Home, PTE, Links, About]
               </a-menu-item>
               <a-menu-item @click="toHomeClick" key="Whitepaper">
                 Whitepaper
-              </a-menu-item>
-              <a-menu-item @click="toHomeClick" key="Deck">
-                Pitch Deck
               </a-menu-item>
               <a-menu-item @click="toStakingClick" key="staking">
                 Staking
@@ -59,6 +45,18 @@ const pages = [Home, PTE, Links, About]
           </a-col>
         </a-row>
       </div>
+      </a-col>
+      <a-col :lg="3" :md="2" :xs="0">
+        <span style=" font-weight: 800; font-size: min(3vh,18px);  text-transform: uppercase; color:#ffff"> Contract:</span>
+      </a-col>
+      <a-col :lg="9" :md="20" :xs="22" style="text-align: center;">
+        <a-typography-text copyable
+          style="background: rgba(0, 0, 0, 0.5); border-radius: 8.40801px; padding: 10px 5px;  align-items: center;">
+          <span
+            style="  margin: 10px; font-weight: 500; font-style: italic; font-size: min(3.3vw, 14px); color: yellow; word-break: break-all;">
+            0x55a020925d1dBAE2aEF72cc9f4b2F584429a5b99
+          </span>
+        </a-typography-text>
       </a-col>
     </a-row>
     
