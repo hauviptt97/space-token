@@ -53,7 +53,7 @@ const hovered = false
 
 @media screen and (max-width: 500px) {
     #mghome {
-            height: 9.6vh;
+            height: 0;
         }
 }
 
