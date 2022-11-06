@@ -22,7 +22,7 @@ const dataNFT = [["nft1a.png", "nft1b.png", "nft1c.png", "nft1d.png"], ["nft2a.p
         </a-row>
         <a-row justify="center">
             <a-col :span="5">
-            <Carousel items-to-show="1" itemsToScroll="1"  :wrap-around="true" pause-autoplay-on-hover>
+            <Carousel items-to-show="1" itemsToScroll="1"  autoplay="5000" :wrap-around="true" pause-autoplay-on-hover>
                 <Slide v-for="list in dataNFT" :key="list">
                         <div class="carousel__item" >
                             <a-row>

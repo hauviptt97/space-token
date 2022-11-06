@@ -15,8 +15,12 @@
                                 <a-menu-item @click="toHomeClick" key="Marketplace">
                                     NFT Marketplace
                                 </a-menu-item>
-                                <a-menu-item @click="toHomeClick" key="Roadmap">
+                                <a-menu-item key="Roadmap">
+                                <a href="#roadmap">
+
                                     Roadmap
+
+                                </a>
                                 </a-menu-item>
                                 <a-menu-item @click="toHomeClick" key="Whitepaper">
                                     Whitepaper
@@ -75,7 +79,7 @@
 }
 
 #menu .ant-menu-horizontal:not(.ant-menu-dark)>.ant-menu-item-selected {
-    color: yellow;
+    color: yellow !important;
 }
 
 

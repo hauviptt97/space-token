@@ -2,12 +2,11 @@
 import { ref,reactive } from 'vue'
 import Home from './Home.vue'
 import PTE from './PTE.vue'
+import Roadmap from './Roadmap.vue'
 import SpaceNFT from './SpaceNFT.vue'
 import Header from './layout/Header.vue'
 import About from './About.vue'
 import 'vue3-carousel/dist/carousel.css'
-import { Carousel, Slide, Pagination, Navigation } from 'vue3-carousel'
-import { MailOutlined, AppstoreOutlined, SettingOutlined } from '@ant-design/icons-vue';
 
 const state = reactive({
   collapsed: false,
@@ -26,6 +25,7 @@ const state = reactive({
       <Home />
       <PTE />
       <SpaceNFT />
+      <Roadmap />
     </a-layout-content>
   </a-layout>
 </template>
