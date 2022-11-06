@@ -15,9 +15,9 @@ const hovered = false
         <a-col span="6">
             <div class="night">
                 <div v-for="n in 10" class="shooting_star"></div>
-                <div style="margin-top: 45vh;  transform: rotateZ(-130deg);">
+                <div style="margin-top: 40vh;  transform: rotateZ(-130deg);">
                     <a class="linkplay">
-                        <img :src="$image('/images/component/', hovered ? btnPlayNames[1]:btnPlayNames[0])" @mouseover="this.hovered=!hovered" style="width:70%">
+                        <img :src="$image('/images/component/', hovered ? btnPlayNames[1]:btnPlayNames[0])" @mouseover="this.hovered=!hovered" style="width:20vw">
                     </a>
                 </div>
 
@@ -41,17 +41,16 @@ const hovered = false
 
 <style>
 .bg {
-    width: 100%;
-    height: 90vh;
-    background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
-
+    background-size: contain;
+    background-position: center;
+    background-size: 100%;
 }
 
 #home {
     margin-top: 12vh;
-    width: 100vw;
+    width: 100%;
+    height: 100vh;
 }
 
 #home .ant-row {
@@ -75,9 +74,6 @@ const hovered = false
     color: white;
 }
 
-.linkplay {
-    margin-top: 35vh;
-}
 
 .linkplay .change {
     display: none

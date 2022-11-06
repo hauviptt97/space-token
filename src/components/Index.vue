@@ -1,7 +1,7 @@
 <script setup>
 import { ref } from 'vue'
 import Home from './Home.vue'
-import Staking from './Staking.vue'
+import PTE from './PTE.vue'
 import Links from './Links.vue'
 import About from './About.vue'
 import 'vue3-carousel/dist/carousel.css'
@@ -9,29 +9,30 @@ import { Carousel, Slide, Pagination, Navigation } from 'vue3-carousel'
 import { MailOutlined, AppstoreOutlined, SettingOutlined } from '@ant-design/icons-vue';
 
 
-const pages = [Home, Staking, Links, About]
+const pages = [Home, PTE, Links, About]
 
 </script>
 
 <template>
   <a-layout>
-    <a-layout-header style="position:fixed;">
+    <a-layout-header>
     <div class="constract" v-bind:style="{ backgroundImage: 'url(' + $image('/images/component/', 'headerbg.png') + ')' } ">
-    <a-row justify="center" >
-      <span style=" font-weight: 900; font-size: 20px;  text-transform: uppercase; color:#ffff"> SIP Contract:</span> 
-        <div style="margin-top: -2px; margin-left: 10px">
-        <a-typography-text copyable style="background: rgba(0, 0, 0, 0.5);
-    border-radius: 8.40801px;
-    padding: 10px 20px;
-    align-items: center;">
-        <span  style="  margin: 50px; font-weight: 500; font-style: italic; font-size: 1.5rem; color: yellow;">
-        0x55a020925d1dBAE2aEF72cc9f4b2F584429a5b99
-        </span>
+    <a-row align="center" >
+      <a-col :sm="6" :xs="0">
+        <span style=" font-weight: 800; font-size: 3vh;  text-transform: uppercase; color:#ffff"> SIP Contract:</span>
+      </a-col>
+      <a-col :sm="18" :xs="24" style="text-align: start;">
+        <a-typography-text copyable
+          style="background: rgba(0, 0, 0, 0.5); border-radius: 8.40801px; padding: 15px 10px 5px 5px;  align-items: center;">
+          <span style="  margin: 50px; font-weight: 500; font-style: italic; font-size: 3vh; color: yellow;">
+            0x55a020925d1dBAE2aEF72cc9f4b2F584429a5b99
+          </span>
         </a-typography-text>
-        </div>
+      </a-col>
     </a-row>
     <div id="menu">
     <a-row >
+      <a-col :sm="24" :xs="4">
       <a-menu v-model:selectedKeys="current" mode="horizontal" :inline-collapsed="collapsed">
       <a-menu-item @click="toHomeClick" key="Marketplace">
           NFT Marketplace
@@ -52,14 +53,15 @@ const pages = [Home, Staking, Links, About]
           Links
         </a-menu-item>
       </a-menu>
-      </a-row>
+      </a-col>
+    </a-row>
     </div>
 
     </div>
     </a-layout-header>
     <a-layout-content >
       <Home />
-      <Home />
+      <PTE />
     </a-layout-content>
   </a-layout>
 </template>
@@ -72,12 +74,21 @@ const pages = [Home, Staking, Links, About]
 
 .ant-layout-header{
   padding:0px !important;
+  position: fixed;
+    width: 100%;
+    z-index: 99;
+}
+
+.ant-typography-expand,
+.ant-typography-edit,
+.ant-typography-copy{
+  margin-left: -4vh !important
 }
 
 .anticon svg {
-    width:2rem;
-    height:1.5rem;
-    color:#fff
+    width:2vh;
+    height:2vh;
+    color:#fff;
 }
 
 #menu ul {
@@ -122,7 +133,7 @@ const pages = [Home, Staking, Links, About]
 }
 
 .ant-layout .ant-layout-content {
-height: 93vh;
+height: 100vh;
 }
 
 .constract {

@@ -1,5 +1,6 @@
 body{
   overflow-x: hidden;
+  position: relative;
 }
 #app {
   width: 100vw;
