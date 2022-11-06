@@ -55,11 +55,11 @@
     color: white;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 700px) {
     #pte-img {
             margin-top: -27px;
             width: 50%;
-            height: auto;
+            height: 30%;
     }
 }
 </style>

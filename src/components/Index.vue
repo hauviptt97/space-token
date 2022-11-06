@@ -52,8 +52,7 @@ const pages = [Home, PTE, Links, About]
       <a-col :lg="9" :md="20" :xs="22" style="text-align: center;">
         <a-typography-text copyable
           style="background: rgba(0, 0, 0, 0.5); border-radius: 8.40801px; padding: 10px 5px;  align-items: center;">
-          <span
-            style="  margin: 10px; font-weight: 500; font-style: italic; font-size: min(3.3vw, 14px); color: yellow; word-break: break-all;">
+          <span id="constract-code">
             0x55a020925d1dBAE2aEF72cc9f4b2F584429a5b99
           </span>
         </a-typography-text>
@@ -147,5 +146,18 @@ height: 100vh;
 }
 
 
+#constract-code{
+    margin: 10px;
+    font-weight: 500;
+    font-style: italic;
+    font-size: 16px;
+    color: yellow;
+    word-break: break-all;
+}
 
+@media screen and (max-width: 700px) {
+    #constract-code {
+    font-size: 8px;
+  }
+}
 </style>
