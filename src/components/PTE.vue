@@ -57,8 +57,9 @@
 
 @media screen and (max-width: 500px) {
     #pte-img {
-            margin-top: -24px;
-            width: 30%;
+            margin-top: -27px;
+            width: 50%;
+            height: auto;
     }
 }
 </style>

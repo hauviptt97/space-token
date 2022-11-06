@@ -1,5 +1,5 @@
 <script setup>
-import { ref } from 'vue'
+import { ref,reactive } from 'vue'
 import Home from './Home.vue'
 import PTE from './PTE.vue'
 import Links from './Links.vue'
@@ -8,7 +8,9 @@ import 'vue3-carousel/dist/carousel.css'
 import { Carousel, Slide, Pagination, Navigation } from 'vue3-carousel'
 import { MailOutlined, AppstoreOutlined, SettingOutlined } from '@ant-design/icons-vue';
 
-const collapsed = true
+const state = reactive({
+  collapsed: false,
+});
 
 const pages = [Home, PTE, Links, About]
 
@@ -22,15 +24,15 @@ const pages = [Home, PTE, Links, About]
       <a-col :sm="6" :xs="0">
         <span style=" font-weight: 800; font-size: min(3vh,18px);  text-transform: uppercase; color:#ffff"> SIP Contract:</span>
       </a-col>
-      <a-col :sm="18" :xs="21" style="text-align: center;">
+      <a-col :sm="18" :xs="22" style="text-align: center;">
         <a-typography-text copyable
           style="background: rgba(0, 0, 0, 0.5); border-radius: 8.40801px; padding: 10px 5px;  align-items: center;">
-          <span style="  margin: 10px; font-weight: 500; font-style: italic; font-size: min(3.3vw, 15px); color: yellow; word-break: break-all;">
+          <span style="  margin: 10px; font-weight: 500; font-style: italic; font-size: min(3.3vw, 14px); color: yellow; word-break: break-all;">
             0x55a020925d1dBAE2aEF72cc9f4b2F584429a5b99
           </span>
         </a-typography-text>
       </a-col>
-      <a-col :sm="24" :xs="3">
+      <a-col :sm="24" :xs="2">
       <div id="menu">
         <a-row>
           <a-col :sm="24" :xs="4">
