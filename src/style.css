@@ -8,7 +8,10 @@ body{
   margin: 0 auto;
   text-align: center;
 }
-
+.ant-menu-item:hover{
+text-decoration: none !important;
+}
+/* 
 button {
   background-color: transparent;
   color: white !important;
@@ -54,4 +57,4 @@ button:hover:after,
 button:hover:before {
   width: 100%;
   height: 100%;
-}
+} */
