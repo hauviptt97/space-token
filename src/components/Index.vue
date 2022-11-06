@@ -25,7 +25,7 @@ const pages = [Home, PTE, Links, About]
       <a-col :sm="18" :xs="21" style="text-align: center;">
         <a-typography-text copyable
           style="background: rgba(0, 0, 0, 0.5); border-radius: 8.40801px; padding: 10px 5px;  align-items: center;">
-          <span style="  margin: 10px; font-weight: 500; font-style: italic; font-size: min(3.3vw, 18px); color: yellow; word-break: break-all;">
+          <span style="  margin: 10px; font-weight: 500; font-style: italic; font-size: min(3.3vw, 15px); color: yellow; word-break: break-all;">
             0x55a020925d1dBAE2aEF72cc9f4b2F584429a5b99
           </span>
         </a-typography-text>
