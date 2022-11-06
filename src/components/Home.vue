@@ -94,6 +94,11 @@ const hovered = false
     transform: rotateZ(130deg);
 }
 
+
+@media screen and (min-width: 800px) {
+
+
+
 .shooting_star {
     position: absolute;
     height: 2px;
@@ -485,5 +490,6 @@ const hovered = false
     100% {
         transform: rotate(405deg);
     }
+}
 }
 </style>
