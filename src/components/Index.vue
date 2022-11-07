@@ -3,6 +3,7 @@ import { ref,reactive } from 'vue'
 import Home from './Home.vue'
 import PTE from './PTE.vue'
 import Roadmap from './Roadmap.vue'
+import Community from './Community.vue'
 import SpaceNFT from './SpaceNFT.vue'
 import Header from './layout/Header.vue'
 import About from './About.vue'
@@ -26,6 +27,7 @@ const state = reactive({
       <PTE />
       <SpaceNFT />
       <Roadmap />
+      <Community />
     </a-layout-content>
   </a-layout>
 </template>

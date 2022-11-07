@@ -17,9 +17,7 @@
                                 </a-menu-item>
                                 <a-menu-item key="Roadmap">
                                 <a href="#roadmap">
-
                                     Roadmap
-
                                 </a>
                                 </a-menu-item>
                                 <a-menu-item @click="toHomeClick" key="Whitepaper">
@@ -29,7 +27,9 @@
                                     Staking
                                 </a-menu-item>
                                 <a-menu-item @click="toLinksClick" key="link">
+                                <a href="#community">
                                     Links
+                                    </a>
                                 </a-menu-item>
                             </a-menu>
                         </a-col>
